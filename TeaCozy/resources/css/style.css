@@ -1,0 +1,124 @@
+
+/* general formatting for webpage */
+
+html {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* header formatting */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*spreads logo and nav apart */
+
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 69px;
+  z-index: 1;
+
+  background-color: black;
+  opacity: 0.9;
+  border-bottom: 1px solid seashell;
+}
+
+nav span {
+  display: inline-block;
+  padding: 10px;
+  font-family: inherit;
+  color: seashell;
+}
+
+nav {
+  padding-right: 40px;
+}
+
+a {
+  font-family: inherit;
+  font-size: inherit;
+  opacity: inherit;
+  color: inherit;
+}
+
+.logo {
+  height: 50px;
+  padding-left: 10px;
+}
+
+/* body formatting */
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 69px;
+  /*border: 2px white dashed;*/
+}
+
+#mission {
+  background-image: url("../media/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  background-color: black;
+}
+
+.boxholder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productbox img {
+  height: 200px;
+  width: 300px;
+  padding: 10px 10px 5px 20px;
+}
+
+.productbox h4 {
+  margin: 0px 0px 10px 0px; /*keep labels near images*/
+}
+
+#locations {
+  background-image: url("../media/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#loc_heading {
+  background: rgba(0, 0, 0, 0)
+
+}
+
+.locationbox {
+  background: black;
+  margin: 15px 40px;
+  width: 300px;
+}
+
+#contact {
+  height = 200px;
+}
+/* footer formatting */
+.footer {
+  position: relative;
+  top: 69px; /* offset to match content */
+  width: 100%;
+  text-align: left;
+  padding-left: 15px;
+}
